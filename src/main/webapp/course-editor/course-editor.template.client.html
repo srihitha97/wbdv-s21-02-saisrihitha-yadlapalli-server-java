@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm justify-content-between px-0">
+    <div class="navbar-brand col-3 font-weight-bold text-center">
+        <a href="../home/home.template.client.html" class="pull-left">
+            <i class="fa fa-close text-light"></i>
+        </a>
+        <div class="d-inline-block">
+            CS5610 - WebDev
+        </div>
+    </div>
+    <ul class="navbar-nav col-9 justify-content-between">
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                Build
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2 active" href="#">
+                Pages
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                Theme
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                Store
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                Apps
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                Settings
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-dark nav-link px-4 ml-2" href="#">
+                <i class="fa fa-plus"></i>
+            </a></li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="min-vh-100 col-3 bg-dark">
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 1 - jQuery</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-primary text-light p-2 mb-2">
+                <span>Module 2 - React</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 3 - Redux</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 4 - Native</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 5 - Angular</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 6 - Node</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <button class="btn rounded btn-block text-left btn-secondary text-light p-2 mb-2">
+                <span>Module 7 - Mongo</span>
+                <i class="fa fa-close pull-right align-bottom"></i>
+            </button>
+            <div>
+                <button class=" btn btn-dark pull-right">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-9 pr-4">
+            <div class="mb-3 d-flex mt-2">
+                <button class="font-weight-bold py-2 px-5 border-0 btn-secondary mr-2 text-light">
+                    Topic 1
+                </button>
+                <button class="font-weight-bold py-2 px-5 border-0 btn-dark mr-2 text-light">
+                    Topic 2
+                </button>
+                <button class="font-weight-bold py-2 px-5 border-0 btn-secondary mr-2 text-light">
+                    Topic 3
+                </button>
+                <button class="font-weight-bold py-2 px-5 border-0 btn-secondary mr-2 text-light">
+                    Topic 4
+                </button>
+                <button class="py-2 px-3 border-0 btn-secondary mr-2 text-light">
+                    <i class="fa fa-plus text-light"></i>
+                </button>
+            </div>
+            <div class="mb-3 d-flex align-items-baseline justify-content-end">
+                <button class="btn btn-success btn-sm">Save</button>
+                <label class="mx-2">Preview</label>
+                <i class="fa fa-2x fa-toggle-off align-self-center"></i>
+            </div>
+            <div class="mb-3 ml-1 border rounded py-2 px-3">
+                <form class="mb-3">
+                    <h4 class="pull-left">Heading widget</h4>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button class="btn btn-warning m-1">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+                        <button class="btn btn-warning m-1">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <select aria-label="Widget type" class="form-control d-inline w-auto"
+                                id="widget-input m-1">
+                            <option>Heading</option>
+                        </select>
+                        <button class="btn btn-danger m-1">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+                    <input class="form-control mb-2" id="widget-text" aria-label="Heading text"
+                           placeholder="Heading text"/>
+                    <select class="form-control mb-2" id="heading-type" aria-label="Heading type">
+                        <option>Heading 1</option>
+                        <option>Heading 2</option>
+                        <option>Heading 3</option>
+                        <option>Heading 4</option>
+                        <option>Heading 5</option>
+                        <option>Heading 6</option>
+                    </select>
+                    <input class="form-control" id="widget-name" aria-label="Widget name"
+                           placeholder="Widget name"/>
+                </form>
+                <h4>Preview</h4>
+                <div>
+                    <h1>Heading text</h1>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-danger pull-right">
+                    <i class="fa fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
