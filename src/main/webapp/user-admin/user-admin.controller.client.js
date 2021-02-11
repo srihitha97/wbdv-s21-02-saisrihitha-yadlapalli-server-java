@@ -34,7 +34,7 @@ function renderUsers(users) {
             .append(`
       <tr class="wbdv-template table-warning wbdv-user wbdv-hidden">
           <td class="text-danger">${user.username}</td>
-          <td class="text-danger">${"*******"}</td>
+          <td class="text-danger">${""}</td>
           <td class="text-danger">${user.firstName}</td>
           <td class="text-danger">${user.lastName}</td>
           <td class="text-danger">${user.role}</td>
