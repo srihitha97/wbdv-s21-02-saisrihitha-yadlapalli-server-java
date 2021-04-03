@@ -30,7 +30,7 @@ public class WidgetService {
 
     public Widget createWidgetForTopic(String topicId, Widget widget) {
         widget.setTopicId(topicId);
-        widget.setSrc("https://yourimageURL");
+        widget.setSrc("");
 
         return repository.save(widget);
 //    UUID uuid = UUID.randomUUID();
